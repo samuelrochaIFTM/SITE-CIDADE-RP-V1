@@ -964,6 +964,21 @@ header{
 
 }
 
+.system-content a{
+    color: inherit;
+    text-decoration: none;
+    border: none;
+    outline: none;
+}
+
+.system-content a:hover,
+.system-content a:visited,
+.system-content a:focus{
+    color: inherit;
+    text-decoration: none;
+    border: none;
+}
+
 /*======================================
 
         ATUALIZAÇÕES
