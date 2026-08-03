@@ -647,6 +647,12 @@ header{
     color:var(--text2);
 }
 
+.stat-card-link{
+    display: block;
+    text-decoration: none;
+    color: inherit;
+}
+
 /*======================================
 
         FACÇÕES
