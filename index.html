@@ -35,55 +35,110 @@
 <!-- NAVBAR -->
 <!--========================-->
 
-<header>
+<nav id="navbar" class="navbar-container">
 
-<nav class="navbar">
+    <div class="navbar-inner">
 
-<div class="logo">
+        <!-- Menu Desktop (Esquerda) -->
+        <div class="nav-menu-desktop">
+            <a href="#" class="nav-link active">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8"></path>
+                    <path d="M3 10a2 2 0 0 1 .709-1.528l7-5.999a2 2 0 0 1 2.582 0l7 5.999A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                </svg>
+                Home
+            </a>
+            <a href="#" class="nav-link">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="8" cy="21" r="1"></circle>
+                    <circle cx="19" cy="21" r="1"></circle>
+                    <path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"></path>
+                </svg>
+                Loja
+            </a>
+            <a href="#como-comecar" class="nav-link">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="6" y1="11" x2="10" y2="11"></line>
+                    <line x1="8" y1="9" x2="8" y2="13"></line>
+                    <line x1="15" y1="12" x2="15.01" y2="12"></line>
+                    <line x1="18" y1="10" x2="18.01" y2="10"></line>
+                    <path d="M17.32 5H6.68a4 4 0 0 0-3.978 3.59c-.006.052-.01.101-.017.152C2.604 9.416 2 14.456 2 16a3 3 0 0 0 3 3c1 0 1.5-.5 2-1l1.414-1.414A2 2 0 0 1 9.828 16h4.344a2 2 0 0 1 1.414.586L17 18c.5.5 1 1 2 1a3 3 0 0 0 3-3c0-1.545-.604-6.584-.685-7.258-.007-.05-.011-.1-.017-.151A4 4 0 0 0 17.32 5z"></path>
+                </svg>
+                Como Jogar
+            </a>
+            <a href="#" class="nav-link">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10"></path>
+                    <path d="m9 12 2 2 4-4"></path>
+                </svg>
+                Regras
+            </a>
+            <a href="#" class="nav-link">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
+                    <circle cx="9" cy="7" r="4"></circle>
+                    <path d="M22 21v-2a4 4 0 0 0-3-3.87"></path>
+                    <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                </svg>
+                Nossa equipe
+            </a>
+        </div>
 
-    <a href="#">
+        <!-- Logo Central -->
+        <div class="nav-logo-center">
+            <a href="#">
+                <img src="assets/logo_3d_acrp.webp" alt="Action RP">
+            </a>
+        </div>
 
-        <img src="assets/logo_3d_acrp.webp" alt="Action RP">
+        <!-- Menu Desktop (Direita) -->
+        <div class="nav-menu-direita">
+            <div class="nav-online">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
+                    <circle cx="9" cy="7" r="4"></circle>
+                    <path d="M22 21v-2a4 4 0 0 0-3-3.87"></path>
+                    <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                </svg>
+                <span id="player-count">19</span> Jogadores
+            </div>
 
-    </a>
+            <div class="nav-divider"></div>
 
-</div>
+            <a href="#login" class="nav-login-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"></path>
+                    <polyline points="10 17 15 12 10 7"></polyline>
+                    <line x1="15" y1="12" x2="3" y2="12"></line>
+                </svg>
+                Fazer Login
+            </a>
+        </div>
 
-<ul class="menu">
+        <!-- Botão Menu Mobile -->
+        <button type="button" class="nav-mobile-btn" aria-label="Abrir menu">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 5h16"></path>
+                <path d="M4 12h16"></path>
+                <path d="M4 19h16"></path>
+            </svg>
+        </button>
 
-<li><a href="#">Home</a></li>
+        <!-- Login Mobile -->
+        <div class="nav-mobile-login">
+            <a href="#login" class="nav-login-btn" style="font-size: 11px; padding: 5px 12px;">
+                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"></path>
+                    <polyline points="10 17 15 12 10 7"></polyline>
+                    <line x1="15" y1="12" x2="3" y2="12"></line>
+                </svg>
+                Login
+            </a>
+        </div>
 
-<li><a href="#faccoes">Facções</a></li>
-
-<li><a href="#sistemas">Sistemas</a></li>
-
-<li><a href="#atualizacoes">Atualizações</a></li>
-
-<li><a href="#footer">Contato</a></li>
-
-</ul>
-
-<div class="right-menu">
-
-<div class="online">
-
-<span class="dot"></span>
-
-184 Jogadores
-
-</div>
-
-<a href="#login" class="btn-login">
-
-Entrar
-
-</a>
-
-</div>
+    </div>
 
 </nav>
-
-</header>
 
 <!--========================-->
 <!-- HERO -->
@@ -189,247 +244,6 @@ alt="Logo">
 </section>
 
 <!--========================-->
-<!-- Separador -->
-<!--========================-->
-
-<div class="section-divider">
-
-<span></span>
-
-<p>
-
-ÚLTIMAS NOVIDADES
-
-</p>
-
-<span></span>
-
-</div>
-
-<!--========================-->
-<!-- ESTATÍSTICAS -->
-<!--========================-->
-
-<section class="stats">
-<div class="stats-grid">
-
-    <a href="https://youtu.be/fQRnbz_LLZk?si=Ak66Np52QMNagX7G" class="stat-card-link" target="_blank">
-        <div class="stat-card">
-            <div class="icon">👥</div>
-            <h3>184</h3>
-            <span>Jogadores Online</span>
-        </div>
-    </a>
-
-    <a href="https://youtu.be/fQRnbz_LLZk?si=Ak66Np52QMNagX7G" class="stat-card-link" target="_blank">
-        <div class="stat-card">
-            <div class="icon">🚗</div>
-            <h3>350+</h3>
-            <span>Veículos Exclusivos</span>
-        </div>
-    </a>
-
-    <a href="https://youtu.be/fQRnbz_LLZk?si=Ak66Np52QMNagX7G" class="stat-card-link" target="_blank">
-        <div class="stat-card">
-            <div class="icon">🏠</div>
-            <h3>120</h3>
-            <span>Casas Disponíveis</span>
-        </div>
-    </a>
-
-</div>
-</section>
-
-<!--========================-->
-<!-- FACÇÕES -->
-<!--========================-->
-
-<section class="factions" id="faccoes">
-
-    <div class="section-title">
-
-        <small>FACÇÕES</small>
-
-        <h2>Escolha seu caminho.</h2>
-
-        <p>
-            Faça parte das organizações que movimentam
-            a cidade e escreva sua própria história.
-        </p>
-
-    </div>
-
-    <div class="faction-grid">
-
-        <!-- Polícia -->
-
-        <div class="faction-card">
-
-            <img src="assets/policia.webp" alt="Polícia">
-
-            <div class="card-content">
-
-                <h3>Polícia Militar</h3>
-
-                <p>
-
-                    Combata o crime,
-                    realize patrulhas,
-                    perseguições e operações especiais.
-
-                </p>
-
-                <a href="https://discord.gg/2KdNsW9zbg" target="_blank">
-
-                    Saiba Mais →
-
-                </a>
-
-            </div>
-
-        </div>
-
-        <!-- Hospital -->
-
-        <div class="faction-card">
-
-            <img src="assets/hospital.webp" alt="Hospital">
-
-            <div class="card-content">
-
-                <h3>Hospital</h3>
-
-                <p>
-
-                    Salve vidas,
-                    realize atendimentos,
-                    cirurgias e resgates.
-
-                </p>
-
-                <a href="https://discord.gg/sUybDUzERN" target="_blank">
-
-                    Saiba Mais →
-
-                </a>
-
-            </div>
-
-        </div>
-
-        <!-- Mecânica -->
-
-        <div class="faction-card">
-
-            <img src="assets/mecanica.webp" alt="Mecânica">
-
-            <div class="card-content">
-
-                <h3>Mecânica</h3>
-
-                <p>
-
-                    Personalize veículos,
-                    faça upgrades
-                    e reparos completos.
-
-                </p>
-
-                <a href="https://discord.gg/CXMvHDYjed">
-
-                    Saiba Mais →
-
-                </a>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-<!--========================-->
-<!-- EXPERIÊNCIA -->
-<!--========================-->
-
-<section class="experience">
-
-    <div class="experience-image">
-
-        <img src="assets/personagens2.webp" alt="Franklin">
-
-    </div>
-
-    <div class="experience-content">
-
-        <small>ROLEPLAY DE VERDADE</small>
-
-        <h2>
-
-            Uma cidade feita
-            para quem gosta
-            de qualidade.
-
-        </h2>
-
-        <p>
-
-            Nosso servidor oferece economia balanceada,
-            empregos exclusivos,
-            empresas,
-            facções,
-            sistema imobiliário,
-            banco,
-            celular,
-            garagem personalizada
-            e muito mais.
-
-        </p>
-
-        <ul>
-
-            <li>✔ Economia Balanceada</li>
-
-            <li>✔ Servidor Estável</li>
-
-            <li>✔ Equipe Ativa</li>
-
-            <li>✔ Sistemas Exclusivos</li>
-
-            <li>✔ Eventos Semanais</li>
-
-        </ul>
-
-        <a href="https://discord.com/invite/rpactioncity" class="btn-primary">
-
-            Começar Agora
-
-        </a>
-
-    </div>
-
-</section>
-
-<!--========================-->
-<!-- Separador -->
-<!--========================-->
-
-<div class="section-divider">
-
-    <span></span>
-
-    <p>
-
-        SISTEMAS EXCLUSIVOS
-
-    </p>
-
-    <span></span>
-
-</div>
-
-<!--========================-->
 <!-- SISTEMAS -->
 <!--========================-->
 
@@ -448,112 +262,90 @@ alt="Logo">
 
     </div>
 
-    <!-- Sistema 1 -->
+    <div class="systems-grid">
 
-    <div class="system-box">
-
-        <div class="system-image">
-
-            <img src="assets/personagens3.png" alt="Trevor">
-
+        <!-- Sistema 1 -->
+        <div class="system-card">
+            <a href="https://www.youtube.com/watch?v=SEU_VIDEO" target="_blank" class="video-link">
+                <div class="system-icon">🏦</div>
+                <h3>Sistema de ATM</h3>
+                <p>Sistema inovador de roubo de caixas eletrônicos com mecânica dinâmica.</p>
+                <ul>
+                    <li>Múltiplos modelos de ATM</li>
+                    <li>Sistema de alarmes dinâmico</li>
+                    <li>Ferramentas exclusivas</li>
+                </ul>
+            </a>
         </div>
 
-        <div class="system-content">
-
-                <a href="https://www.youtube.com/watch?v=SEU_VIDEO" target="_blank" class="video-link">
-                <small>SISTEMA DE ATM</small>
-                </a>
-
-            <h2>Sistema inovador de roubo de ATM.</h2>
-
-            <p>
-
-                Planeje ações estratégicas, utilize equipamentos específicos,
-                enfrente sistemas de segurança e execute assaltos a caixas
-                eletrônicos com uma mecânica dinâmica e imersiva.
-
-            </p>
-
-            <ul>
-
-                <li>✔ Múltiplos modelos de ATM</li>
-                <li>✔ Sistema de alarmes dinâmico</li>
-                <li>✔ Ferramentas exclusivas para o roubo</li>
-                <li>✔ Recompensas balanceadas</li>
-
-            </ul>
-
-        </div>
-
-    </div>
-
-    <!-- Sistema 2 -->
-
-    <div class="system-box reverse">
-
-        <div class="system-content">
+        <!-- Sistema 2 -->
+        <div class="system-card">
             <a href="https://youtu.be/aV9Ec8mgsfM?si=UOTsmtfkz7J7TWTL" target="_blank" class="video-link">
-            <small>CUSTOMIZAÇÂO DE PERSONAGENS</small>
+                <div class="system-icon">👤</div>
+                <h3>Customização de Personagem</h3>
+                <p>Crie um personagem único com centenas de opções de personalização.</p>
+                <ul>
+                    <li>Centenas de roupas</li>
+                    <li>Acessórios exclusivos</li>
+                    <li>Tatuagens e cortes</li>
+                </ul>
             </a>
-            <h2>Crie um personagem único.</h2>
-            <p>
-                Personalize seu personagem com diversas roupas,
-                acessórios, penteados, tatuagens e muito mais.
-                Monte um visual exclusivo para viver sua história no RP.
-            </p>
-
-            <ul>
-                <li>✔ Centenas de roupas</li>
-                <li>✔ Acessórios exclusivos</li>
-                <li>✔ Tatuagens e cortes de cabelo</li>
-                <li>✔ Personalização completa</li>
-            </ul>
-
         </div>
 
-        <div class="system-image">
-
-            <img src="assets/michael.avif" alt="Michael">
-
-        </div>
-
-    </div>
-
-    <!-- Sistema 3 -->
-
-    <div class="system-box">
-
-        <div class="system-image">
-
-            <img src="assets/personagens4.png" alt="Franklin">
-
-        </div>
-
-        <div class="system-content">
+        <!-- Sistema 3 -->
+        <div class="system-card">
             <a href="https://youtu.be/xJQhXW9QYw8?si=OBCdRbXtve6jD1wl" target="_blank" class="video-link">
-            <small>SISTEMA POLICIAL</small>
+                <div class="system-icon">🚔</div>
+                <h3>Sistema Policial</h3>
+                <p>Experiência policial completa com CAD/MDT e operações táticas.</p>
+                <ul>
+                    <li>CAD/MDT integrado</li>
+                    <li>Sistema de algemas</li>
+                    <li>Operações táticas</li>
+                </ul>
             </a>
+        </div>
 
-            <h2>Uma experiência policial completa.</h2>
+        <!-- Sistema 4 -->
+        <div class="system-card">
+            <a href="#" target="_blank" class="video-link">
+                <div class="system-icon">🏠</div>
+                <h3>Sistema Imobiliário</h3>
+                <p>Compre, venda e personalize imóveis em toda a cidade.</p>
+                <ul>
+                    <li>Casas e apartamentos</li>
+                    <li>Sistema de mobília</li>
+                    <li>Aluguel e venda</li>
+                </ul>
+            </a>
+        </div>
 
-            <p>
+        <!-- Sistema 5 -->
+        <div class="system-card">
+            <a href="#" target="_blank" class="video-link">
+                <div class="system-icon">💼</div>
+                <h3>Sistema Econômico</h3>
+                <p>Economia balanceada com empregos, empresas e investimentos.</p>
+                <ul>
+                    <li>Empregos exclusivos</li>
+                    <li>Empresas próprias</li>
+                    <li>Sistema de banco</li>
+                </ul>
+            </a>
+        </div>
 
-                Patrulhe as ruas, responda a chamados,
-                investigue crimes, coordene operações
-                e mantenha a cidade segura com um sistema
-                totalmente otimizado para Roleplay.
-
-            </p>
-
-            <ul>
-
-                <li>✔ CAD/MDT integrado</li>
-                <li>✔ Sistema de algemas</li>
-                <li>✔ Prisões e conduções</li>
-                <li>✔ Operações táticas</li>
-
-            </ul>
-
+        <!-- Sistema 6 -->
+        <div class="system-card">
+            <a href="#" target="_blank" class="video-link">
+                <div class="system-icon">🚗</div>
+                <h3>Sistema de Veículos</h3>
+                <p>Mais de 350 veículos com customização e garagem própria.</p>
+                <ul>
+                    <li>350+ veículos</li>
+                    <li>Customização completa</li>
+                    <li>Garagem exclusiva</li>
+                </ul>
+            </a>
         </div>
 
     </div>
@@ -561,72 +353,167 @@ alt="Logo">
 </section>
 
 <!--========================-->
-<!-- ATUALIZAÇÕES -->
+<!-- COMO COMEÇAR -->
 <!--========================-->
 
-<section class="updates" id="atualizacoes">
+<section class="como-comecar" id="como-comecar">
 
     <div class="section-title">
+        <small>GUIA RÁPIDO</small>
+        <h2>Comece sua jornada na Action RP</h2>
+        <p>
+            Siga os passos abaixo para se conectar ao servidor 
+            e criar a sua própria história. O único limite é a sua criatividade!
+        </p>
+    </div>
 
-        <small>NOVIDADES</small>
+    <div class="passos-grid">
 
-        <h2>Últimas Atualizações</h2>
+        <!-- Passo 1 -->
+        <div class="passo-card">
+            <div class="passo-numero">1</div>
+            <div class="passo-icon">🎮</div>
+            <h3>Instalar o GTA e o FiveM</h3>
+            <p>
+                Você precisa ter o GTA V original e o FiveM instalados 
+                no seu computador para se conectar ao servidor.
+            </p>
+            <div class="passo-botoes">
+                <a href="#" class="btn-passo" target="_blank">
+                    Baixar FiveM
+                </a>
+                <a href="#" class="btn-passo secundario" target="_blank">
+                    Baixar GTA V
+                </a>
+            </div>
+        </div>
+
+        <!-- Passo 2 -->
+        <div class="passo-card">
+            <div class="passo-numero">2</div>
+            <div class="passo-icon">📝</div>
+            <h3>Criar conta e fazer Whitelist</h3>
+            <p>
+                Registre uma conta no site da Action RP e complete 
+                o questionário de whitelist para garantir seu acesso.
+            </p>
+            <a href="#" class="btn-passo" target="_blank">
+                Fazer Whitelist
+            </a>
+        </div>
+
+        <!-- Passo 3 -->
+        <div class="passo-card">
+            <div class="passo-numero">3</div>
+            <div class="passo-icon">🚀</div>
+            <h3>Entrar no servidor</h3>
+            <p>
+                Clique no botão abaixo para abrir o FiveM diretamente 
+                no nosso servidor. Depois, faça login com sua conta.
+            </p>
+            <a href="#" class="btn-passo" target="_blank">
+                Abrir FiveM
+            </a>
+        </div>
 
     </div>
 
-    <div class="updates-grid">
+</section>
 
-        <article class="update-card">
+<!--========================-->
+<!-- FAQ -->
+<!--========================-->
 
-            <span class="badge">NOVO</span>
+<section class="faq">
 
-            <h3>Sistema de Gangues</h3>
+    <div class="faq-left">
 
-            <p>
-
-                Novas missões,
-                territórios e recompensas.
-
+        <div class="faq-header">
+            <h2 class="faq-title">Dúvidas <span class="faq-highlight">Frequentes</span></h2>
+            <p class="faq-desc">
+                Encontre respostas para as perguntas mais comuns sobre o <strong>Action RP</strong>.<br>
+                Se não encontrar o que procura, fale com a nossa equipe.
             </p>
+        </div>
 
-            <small>20 Julho 2026</small>
+        <div class="faq-items">
 
-        </article>
+            <div class="faq-item">
+                <button class="faq-item-btn">
+                    <span class="faq-item-num">01</span>
+                    <span class="faq-item-q">Como posso jogar na cidade?</span>
+                    <svg class="faq-item-chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <polyline points="6 9 12 15 18 9"></polyline>
+                    </svg>
+                </button>
+                <div class="faq-item-body">
+                    <p class="faq-item-a">
+                        Primeiro, leia as regras do servidor e faça a sua whitelist pelo site. Após ser aprovado, baixe o GTA V e instale o FiveM. Feito isso, conecte-se na cidade através do IP disponível na seção "Como Jogar". Não é necessário pagar para jogar no servidor.
+                    </p>
+                </div>
+            </div>
 
-        <article class="update-card">
+            <div class="faq-item">
+                <button class="faq-item-btn">
+                    <span class="faq-item-num">02</span>
+                    <span class="faq-item-q">Qual a temática da cidade?</span>
+                    <svg class="faq-item-chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <polyline points="6 9 12 15 18 9"></polyline>
+                    </svg>
+                </button>
+                <div class="faq-item-body">
+                    <p class="faq-item-a">
+                        A cidade é de temática americana. Todo o Roleplay e conteúdo (roupas, corporações, facções etc.) são guiados pela temática americana. Sendo assim, nada pertencente ao Brasil estará presente no servidor.
+                    </p>
+                </div>
+            </div>
 
-            <span class="badge">UPDATE</span>
+            <div class="faq-item">
+                <button class="faq-item-btn">
+                    <span class="faq-item-num">03</span>
+                    <span class="faq-item-q">Como consigo suporte na cidade?</span>
+                    <svg class="faq-item-chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <polyline points="6 9 12 15 18 9"></polyline>
+                    </svg>
+                </button>
+                <div class="faq-item-body">
+                    <p class="faq-item-a">
+                        Todo suporte é feito através do nosso site, seja para Suporte, Denúncia ou Report de Bugs. Você será notificado pelo Discord a cada atualização sobre seu atendimento.
+                    </p>
+                </div>
+            </div>
 
-            <h3>Banco 2.0</h3>
+            <div class="faq-item">
+                <button class="faq-item-btn">
+                    <span class="faq-item-num">04</span>
+                    <span class="faq-item-q">Como posso fazer compras no servidor?</span>
+                    <svg class="faq-item-chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <polyline points="6 9 12 15 18 9"></polyline>
+                    </svg>
+                </button>
+                <div class="faq-item-body">
+                    <p class="faq-item-a">
+                        Todas as suas compras podem ser feitas pelo nosso próprio site. Os itens comprados são setados de forma automática, não é necessário apresentar comprovante de pagamento à equipe, apenas em caso de problemas no recebimento. Caso efetue reembolso tentando burlar o sistema, sua conta será banida permanentemente.
+                    </p>
+                </div>
+            </div>
 
-            <p>
+            <div class="faq-item">
+                <button class="faq-item-btn">
+                    <span class="faq-item-num">05</span>
+                    <span class="faq-item-q">Como posso me tornar streamer?</span>
+                    <svg class="faq-item-chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <polyline points="6 9 12 15 18 9"></polyline>
+                    </svg>
+                </button>
+                <div class="faq-item-body">
+                    <p class="faq-item-a">
+                        Abra um ticket pelo nosso site. Feito isso, suas plataformas de conteúdo serão analisadas pela equipe responsável. Todos os requisitos para participação e as recompensas serão informados no momento do atendimento.
+                    </p>
+                </div>
+            </div>
 
-                Agora com PIX,
-                cartão virtual
-                e investimentos.
-
-            </p>
-
-            <small>18 Julho 2026</small>
-
-        </article>
-
-        <article class="update-card">
-
-            <span class="badge">NOVO</span>
-
-            <h3>Novos Veículos</h3>
-
-            <p>
-
-                Mais de 30 carros
-                exclusivos adicionados.
-
-            </p>
-
-            <small>14 Julho 2026</small>
-
-        </article>
+        </div>
 
     </div>
 
@@ -681,113 +568,6 @@ alt="Logo">
 </section>
 
 <!--========================-->
-<!-- Separador -->
-<!--========================-->
-
-<div class="section-divider">
-
-    <span></span>
-
-    <p>
-
-        INFORMAÇÕES
-
-    </p>
-
-    <span></span>
-
-</div>
-
-<!--========================-->
-<!-- FAQ -->
-<!--========================-->
-
-<section class="faq">
-
-    <div class="section-title">
-
-        <small>FAQ</small>
-
-        <h2>Perguntas Frequentes</h2>
-
-        <p>
-            Tire suas principais dúvidas antes de iniciar
-            sua jornada no Action RP.
-        </p>
-
-    </div>
-
-    <div class="faq-container">
-
-        <details>
-
-            <summary>
-                Como entrar na cidade?
-            </summary>
-
-            <p>
-
-                Basta entrar em nosso Discord,
-                realizar a whitelist e aguardar
-                a aprovação da equipe.
-
-            </p>
-
-        </details>
-
-        <details>
-
-            <summary>
-                Preciso ter GTA Original?
-            </summary>
-
-            <p>
-
-                Sim. É necessário possuir GTA V
-                original e FiveM instalado.
-
-            </p>
-
-        </details>
-
-        <details>
-
-            <summary>
-                Existe VIP?
-            </summary>
-
-            <p>
-
-                Sim.
-                Você pode adquirir benefícios
-                através de nossa loja oficial.
-
-            </p>
-
-        </details>
-
-        <details>
-
-            <summary>
-                A cidade possui economia própria?
-            </summary>
-
-            <p>
-
-                Sim.
-                Toda a economia foi desenvolvida
-                para proporcionar um Roleplay
-                equilibrado.
-
-            </p>
-
-        </details>
-
-    </div>
-
-</section>
-
-<!--========================-->
 <!-- FOOTER -->
 <!--========================-->
 
@@ -795,64 +575,27 @@ alt="Logo">
 
     <div class="footer-container">
 
-        <div class="footer-logo">
+        <div class="footer-links-top">
+            <a href="#">Início</a>
+            <span>|</span>
+            <a href="#">Regras</a>
+            <span>|</span>
+            <a href="#">Suporte</a>
+            <span>|</span>
+            <a href="#">Privacidade</a>
+            <span>|</span>
+            <a href="#">Termos de Uso</a>
+        </div>
 
-            <img src="assets/logo_3d_acrp.webp" alt="ActionRP">
+        <div class="footer-bottom">
 
-            <p>
-
-                Viva uma experiência única
-                dentro da Action RP.
-
+            <p>© 2026 Action City RP. Todos os direitos reservados.</p>
+            <p class="footer-disclaimer">
+                Action City é um servidor independente de Role Play no Multi Theft Auto (MTA).<br>
+                Grand Theft Auto e suas marcas pertencem à Take-Two Interactive.
             </p>
 
         </div>
-
-        <div class="footer-links">
-
-            <h3>Navegação</h3>
-
-            <a href="#">Home</a>
-
-            <a href="#faccoes">Facções</a>
-
-            <a href="#sistemas">Sistemas</a>
-
-            <a href="https://github.com/samuelrochaIFTM/SITE-CIDADE-RP-V1">Atualizações de Desenvolvimento do Site</a>
-
-        </div>
-
-        <div class="footer-links">
-
-            <h3>Comunidade</h3>
-
-            <a href="https://discord.gg/rpaction">Discord</a>
-
-            <a href="#">Instagram</a>
-
-            <a href="#">TikTok</a>
-
-            <a href="#">YouTube</a>
-
-        </div>
-
-        <div class="footer-links">
-
-            <h3>Suporte</h3>
-
-            <a href="#">Regras</a>
-
-            <a href="#">Whitelist</a>
-
-            <a href="#">Contato</a>
-
-        </div>
-
-    </div>
-
-    <div class="footer-bottom">
-
-        © 2026 Action RP • Todos os direitos reservados.
 
     </div>
 
