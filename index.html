@@ -2,15 +2,17 @@
 <html lang="pt-BR">
 
 <head>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>Action RP</title>
 
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- CSS -->
     <link rel="stylesheet" href="style.css">
 
-    <!-- Fonte -->
+    <!-- Fonte Google -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
@@ -19,648 +21,216 @@
 
 <body>
 
-<!--========================-->
-<!-- Background -->
-<!--========================-->
-
+<!-- ===== FUNDO ===== -->
 <div class="background">
-
     <div class="overlay"></div>
-
     <div class="grid"></div>
-
 </div>
 
-<!--========================-->
-<!-- NAVBAR -->
-<!--========================-->
-
-<nav id="navbar" class="navbar-container">
+<!-- ===== NAVBAR ===== -->
+<nav class="navbar-container">
 
     <div class="navbar-inner">
 
-        <!-- Menu Desktop (Esquerda) -->
+        <!-- Menu Desktop -->
         <div class="nav-menu-desktop">
-            <a href="#" class="nav-link active">
-                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8"></path>
-                    <path d="M3 10a2 2 0 0 1 .709-1.528l7-5.999a2 2 0 0 1 2.582 0l7 5.999A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
-                </svg>
-                Home
-            </a>
-            <a href="#" class="nav-link">
-                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <circle cx="8" cy="21" r="1"></circle>
-                    <circle cx="19" cy="21" r="1"></circle>
-                    <path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"></path>
-                </svg>
-                Loja
-            </a>
-            <a href="#como-comecar" class="nav-link">
-                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <line x1="6" y1="11" x2="10" y2="11"></line>
-                    <line x1="8" y1="9" x2="8" y2="13"></line>
-                    <line x1="15" y1="12" x2="15.01" y2="12"></line>
-                    <line x1="18" y1="10" x2="18.01" y2="10"></line>
-                    <path d="M17.32 5H6.68a4 4 0 0 0-3.978 3.59c-.006.052-.01.101-.017.152C2.604 9.416 2 14.456 2 16a3 3 0 0 0 3 3c1 0 1.5-.5 2-1l1.414-1.414A2 2 0 0 1 9.828 16h4.344a2 2 0 0 1 1.414.586L17 18c.5.5 1 1 2 1a3 3 0 0 0 3-3c0-1.545-.604-6.584-.685-7.258-.007-.05-.011-.1-.017-.151A4 4 0 0 0 17.32 5z"></path>
-                </svg>
-                Como Jogar
-            </a>
-            <a href="#" class="nav-link">
-                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10"></path>
-                    <path d="m9 12 2 2 4-4"></path>
-                </svg>
-                Regras
-            </a>
-            <a href="#" class="nav-link">
-                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
-                    <circle cx="9" cy="7" r="4"></circle>
-                    <path d="M22 21v-2a4 4 0 0 0-3-3.87"></path>
-                    <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
-                </svg>
-                Nossa equipe
-            </a>
+            <a href="#" class="nav-link active"><i class="fas fa-home"></i> Home</a>
+            <a href="#" class="nav-link"><i class="fas fa-store"></i> Loja</a>
+            <a href="#como-comecar" class="nav-link"><i class="fas fa-gamepad"></i> Como Jogar</a>
+            <a href="#" class="nav-link"><i class="fas fa-gavel"></i> Regras</a>
         </div>
 
-        <!-- Logo Central -->
+        <!-- Logo -->
         <div class="nav-logo-center">
-            <a href="#">
-                <img src="assets/logo_3d_acrp.webp" alt="Action RP">
-            </a>
+            <a href="#"><img src="assets/logo_3d_acrp.webp" alt="Action RP"></a>
         </div>
 
-        <!-- Menu Desktop (Direita) -->
+        <!-- Menu Direita -->
         <div class="nav-menu-direita">
             <div class="nav-online">
-                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
-                    <circle cx="9" cy="7" r="4"></circle>
-                    <path d="M22 21v-2a4 4 0 0 0-3-3.87"></path>
-                    <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
-                </svg>
-                <span id="player-count">19</span> Jogadores
+                <i class="fas fa-users"></i>
+                <span>19</span> Jogadores
             </div>
-
             <div class="nav-divider"></div>
-
             <a href="#login" class="nav-login-btn">
-                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"></path>
-                    <polyline points="10 17 15 12 10 7"></polyline>
-                    <line x1="15" y1="12" x2="3" y2="12"></line>
-                </svg>
-                Fazer Login
+                <i class="fas fa-sign-in-alt"></i> Fazer Login
             </a>
         </div>
 
-        <!-- Botão Menu Mobile -->
-        <button type="button" class="nav-mobile-btn" aria-label="Abrir menu">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M4 5h16"></path>
-                <path d="M4 12h16"></path>
-                <path d="M4 19h16"></path>
-            </svg>
-        </button>
-
-        <!-- Login Mobile -->
+        <!-- Mobile -->
+        <button class="nav-mobile-btn"><i class="fas fa-bars"></i></button>
         <div class="nav-mobile-login">
-            <a href="#login" class="nav-login-btn" style="font-size: 11px; padding: 5px 12px;">
-                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"></path>
-                    <polyline points="10 17 15 12 10 7"></polyline>
-                    <line x1="15" y1="12" x2="3" y2="12"></line>
-                </svg>
-                Login
-            </a>
+            <a href="#login" class="nav-login-btn"><i class="fas fa-sign-in-alt"></i> Login</a>
         </div>
 
     </div>
 
 </nav>
 
-<!--========================-->
-<!-- HERO -->
-<!--========================-->
-
+<!-- ===== HERO ===== -->
 <section class="hero">
 
-<div class="hero-left">
-
-<img
-class="characters"
-src="assets/personagensgtarp.webp"
-alt="Personagens GTA">
-
-</div>
-
-<div class="hero-content">
-
-<span class="tag">
-
-ROLEPLAY DE VERDADE
-
-</span>
-
-<h1>
-
-Viva uma nova experiência
-dentro da
-
-<span>Action RP</span>
-
-</h1>
-
-<p>
-
-Construa sua trajetória do zero.
-
-Compre veículos, casas,
-abra empresas,
-participe de facções
-e faça parte da economia
-mais completa do GTA RP.
-
-</p>
-
-<div class="hero-buttons">
-
-<a href="#" class="btn-primary">
-
-Fazer Whitelist
-
-</a>
-
-<a href="#" class="btn-secondary">
-
-Entrar no Discord
-
-</a>
-
-</div>
-
-<div class="hero-info">
-
-<div class="info-card">
-
-<h2>+350</h2>
-
-<span>Veículos</span>
-
-</div>
-
-<div class="info-card">
-
-<h2>120</h2>
-
-<span>Empresas</span>
-
-</div>
-
-<div class="info-card">
-
-<h2>100%</h2>
-
-<span>Roleplay</span>
-
-</div>
-
-</div>
-
-</div>
-
-<div class="hero-right">
-
-<div class="glow"></div>
-
-<img
-src="assets/personagens2.webp"
-class="logo-big"
-alt="Logo">
-
-</div>
-
-</section>
-
-<!--========================-->
-<!-- SISTEMAS -->
-<!--========================-->
-
-<section class="systems" id="sistemas">
-
-    <div class="section-title">
-
-        <small>SISTEMAS</small>
-
-        <h2>Tecnologia feita para o Roleplay.</h2>
-
-        <p>
-            Desenvolvemos sistemas exclusivos para tornar
-            cada experiência única dentro da cidade.
-        </p>
-
+    <div class="hero-left">
+        <img class="characters" src="assets/personagensgtarp.webp" alt="Personagens GTA">
     </div>
 
-    <div class="systems-grid">
-
-        <!-- Sistema 1 -->
-        <div class="system-card">
-            <a href="https://www.youtube.com/watch?v=SEU_VIDEO" target="_blank" class="video-link">
-                <div class="system-icon">🏦</div>
-                <h3>Sistema de ATM</h3>
-                <p>Sistema inovador de roubo de caixas eletrônicos com mecânica dinâmica.</p>
-                <ul>
-                    <li>Múltiplos modelos de ATM</li>
-                    <li>Sistema de alarmes dinâmico</li>
-                    <li>Ferramentas exclusivas</li>
-                </ul>
-            </a>
+    <div class="hero-content">
+        <h1>Viva uma nova experiência dentro da <span>Action RP</span></h1>
+        <p>Construa sua trajetória do zero. Compre veículos, casas, abra empresas, participe de facções e faça parte da economia mais completa do GTA RP.</p>
+        <div class="hero-buttons">
+            <a href="#" class="btn-primary"><i class="fas fa-check-circle"></i> Fazer Whitelist</a>
+            <a href="#" class="btn-secondary"><i class="fab fa-discord"></i> Entrar no Discord</a>
         </div>
+    </div>
 
-        <!-- Sistema 2 -->
-        <div class="system-card">
-            <a href="https://youtu.be/aV9Ec8mgsfM?si=UOTsmtfkz7J7TWTL" target="_blank" class="video-link">
-                <div class="system-icon">👤</div>
-                <h3>Customização de Personagem</h3>
-                <p>Crie um personagem único com centenas de opções de personalização.</p>
-                <ul>
-                    <li>Centenas de roupas</li>
-                    <li>Acessórios exclusivos</li>
-                    <li>Tatuagens e cortes</li>
-                </ul>
-            </a>
-        </div>
-
-        <!-- Sistema 3 -->
-        <div class="system-card">
-            <a href="https://youtu.be/xJQhXW9QYw8?si=OBCdRbXtve6jD1wl" target="_blank" class="video-link">
-                <div class="system-icon">🚔</div>
-                <h3>Sistema Policial</h3>
-                <p>Experiência policial completa com CAD/MDT e operações táticas.</p>
-                <ul>
-                    <li>CAD/MDT integrado</li>
-                    <li>Sistema de algemas</li>
-                    <li>Operações táticas</li>
-                </ul>
-            </a>
-        </div>
-
-        <!-- Sistema 4 -->
-        <div class="system-card">
-            <a href="#" target="_blank" class="video-link">
-                <div class="system-icon">🏠</div>
-                <h3>Sistema Imobiliário</h3>
-                <p>Compre, venda e personalize imóveis em toda a cidade.</p>
-                <ul>
-                    <li>Casas e apartamentos</li>
-                    <li>Sistema de mobília</li>
-                    <li>Aluguel e venda</li>
-                </ul>
-            </a>
-        </div>
-
-        <!-- Sistema 5 -->
-        <div class="system-card">
-            <a href="#" target="_blank" class="video-link">
-                <div class="system-icon">💼</div>
-                <h3>Sistema Econômico</h3>
-                <p>Economia balanceada com empregos, empresas e investimentos.</p>
-                <ul>
-                    <li>Empregos exclusivos</li>
-                    <li>Empresas próprias</li>
-                    <li>Sistema de banco</li>
-                </ul>
-            </a>
-        </div>
-
-        <!-- Sistema 6 -->
-        <div class="system-card">
-            <a href="#" target="_blank" class="video-link">
-                <div class="system-icon">🚗</div>
-                <h3>Sistema de Veículos</h3>
-                <p>Mais de 350 veículos com customização e garagem própria.</p>
-                <ul>
-                    <li>350+ veículos</li>
-                    <li>Customização completa</li>
-                    <li>Garagem exclusiva</li>
-                </ul>
-            </a>
-        </div>
-
+    <div class="hero-right">
+        <div class="glow"></div>
+        <img src="assets/personagens2.webp" class="logo-big" alt="Logo">
     </div>
 
 </section>
 
-<!--========================-->
-<!-- COMO COMEÇAR -->
-<!--========================-->
-
+<!-- ===== COMO COMEÇAR ===== -->
 <section class="como-comecar" id="como-comecar">
 
     <div class="section-title">
         <small>GUIA RÁPIDO</small>
         <h2>Comece sua jornada na Action RP</h2>
-        <p>
-            Siga os passos abaixo para se conectar ao servidor 
-            e criar a sua própria história. O único limite é a sua criatividade!
-        </p>
+        <p>Siga os passos abaixo para se conectar ao servidor e criar a sua própria história.</p>
     </div>
 
     <div class="passos-grid">
 
-        <!-- Passo 1 -->
         <div class="passo-card">
             <div class="passo-numero">1</div>
-            <div class="passo-icon">🎮</div>
+            <div class="passo-icon"><i class="fas fa-gamepad"></i></div>
             <h3>Instalar o GTA e o FiveM</h3>
-            <p>
-                Você precisa ter o GTA V original e o FiveM instalados 
-                no seu computador para se conectar ao servidor.
-            </p>
+            <p>Você precisa ter o GTA V original e o FiveM instalados.</p>
             <div class="passo-botoes">
-                <a href="#" class="btn-passo" target="_blank">
-                    Baixar FiveM
-                </a>
-                <a href="#" class="btn-passo secundario" target="_blank">
-                    Baixar GTA V
-                </a>
+                <a href="#" class="btn-passo"><i class="fas fa-download"></i> Baixar FiveM</a>
+                <a href="#" class="btn-passo secundario"><i class="fas fa-download"></i> Baixar GTA V</a>
             </div>
         </div>
 
-        <!-- Passo 2 -->
         <div class="passo-card">
             <div class="passo-numero">2</div>
-            <div class="passo-icon">📝</div>
+            <div class="passo-icon"><i class="fas fa-pen-fancy"></i></div>
             <h3>Criar conta e fazer Whitelist</h3>
-            <p>
-                Registre uma conta no site da Action RP e complete 
-                o questionário de whitelist para garantir seu acesso.
-            </p>
-            <a href="#" class="btn-passo" target="_blank">
-                Fazer Whitelist
-            </a>
+            <p>Registre uma conta e complete o questionário de whitelist.</p>
+            <a href="#" class="btn-passo"><i class="fas fa-check-circle"></i> Fazer Whitelist</a>
         </div>
 
-        <!-- Passo 3 -->
         <div class="passo-card">
             <div class="passo-numero">3</div>
-            <div class="passo-icon">🚀</div>
+            <div class="passo-icon"><i class="fas fa-rocket"></i></div>
             <h3>Entrar no servidor</h3>
-            <p>
-                Clique no botão abaixo para abrir o FiveM diretamente 
-                no nosso servidor. Depois, faça login com sua conta.
-            </p>
-            <a href="#" class="btn-passo" target="_blank">
-                Abrir FiveM
-            </a>
+            <p>Clique abaixo para abrir o FiveM no nosso servidor.</p>
+            <a href="#" class="btn-passo"><i class="fas fa-play"></i> Abrir FiveM</a>
         </div>
 
     </div>
 
 </section>
 
-<!--========================-->
-<!-- FAQ -->
-<!--========================-->
-
+<!-- ===== FAQ (sem JavaScript) ===== -->
 <section class="faq">
 
     <div class="faq-left">
-
         <div class="faq-header">
             <h2 class="faq-title">Dúvidas <span class="faq-highlight">Frequentes</span></h2>
-            <p class="faq-desc">
-                Encontre respostas para as perguntas mais comuns sobre o <strong>Action RP</strong>.<br>
-                Se não encontrar o que procura, fale com a nossa equipe.
-            </p>
+            <p class="faq-desc">Encontre respostas para as perguntas mais comuns.</p>
         </div>
 
         <div class="faq-items">
 
+            <!-- Item 01 -->
             <div class="faq-item">
-                <button class="faq-item-btn">
+                <input type="checkbox" id="faq1" class="faq-checkbox">
+                <label for="faq1" class="faq-item-btn">
                     <span class="faq-item-num">01</span>
                     <span class="faq-item-q">Como posso jogar na cidade?</span>
-                    <svg class="faq-item-chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <polyline points="6 9 12 15 18 9"></polyline>
-                    </svg>
-                </button>
+                    <i class="fas fa-chevron-down faq-item-chevron"></i>
+                </label>
                 <div class="faq-item-body">
-                    <p class="faq-item-a">
-                        Primeiro, leia as regras do servidor e faça a sua whitelist pelo site. Após ser aprovado, baixe o GTA V e instale o FiveM. Feito isso, conecte-se na cidade através do IP disponível na seção "Como Jogar". Não é necessário pagar para jogar no servidor.
-                    </p>
+                    <p class="faq-item-a">Leia as regras, faça a whitelist, baixe o GTA V e o FiveM, e conecte-se na cidade. Não é necessário pagar.</p>
                 </div>
             </div>
 
+            <!-- Item 02 -->
             <div class="faq-item">
-                <button class="faq-item-btn">
+                <input type="checkbox" id="faq2" class="faq-checkbox">
+                <label for="faq2" class="faq-item-btn">
                     <span class="faq-item-num">02</span>
                     <span class="faq-item-q">Qual a temática da cidade?</span>
-                    <svg class="faq-item-chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <polyline points="6 9 12 15 18 9"></polyline>
-                    </svg>
-                </button>
+                    <i class="fas fa-chevron-down faq-item-chevron"></i>
+                </label>
                 <div class="faq-item-body">
-                    <p class="faq-item-a">
-                        A cidade é de temática americana. Todo o Roleplay e conteúdo (roupas, corporações, facções etc.) são guiados pela temática americana. Sendo assim, nada pertencente ao Brasil estará presente no servidor.
-                    </p>
+                    <p class="faq-item-a">A cidade é de temática americana. Nada pertencente ao Brasil estará presente.</p>
                 </div>
             </div>
 
+            <!-- Item 03 -->
             <div class="faq-item">
-                <button class="faq-item-btn">
+                <input type="checkbox" id="faq3" class="faq-checkbox">
+                <label for="faq3" class="faq-item-btn">
                     <span class="faq-item-num">03</span>
                     <span class="faq-item-q">Como consigo suporte na cidade?</span>
-                    <svg class="faq-item-chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <polyline points="6 9 12 15 18 9"></polyline>
-                    </svg>
-                </button>
+                    <i class="fas fa-chevron-down faq-item-chevron"></i>
+                </label>
                 <div class="faq-item-body">
-                    <p class="faq-item-a">
-                        Todo suporte é feito através do nosso site, seja para Suporte, Denúncia ou Report de Bugs. Você será notificado pelo Discord a cada atualização sobre seu atendimento.
-                    </p>
+                    <p class="faq-item-a">Todo suporte é feito através do nosso site. Você será notificado pelo Discord.</p>
                 </div>
             </div>
 
+            <!-- Item 04 -->
             <div class="faq-item">
-                <button class="faq-item-btn">
+                <input type="checkbox" id="faq4" class="faq-checkbox">
+                <label for="faq4" class="faq-item-btn">
                     <span class="faq-item-num">04</span>
                     <span class="faq-item-q">Como posso fazer compras no servidor?</span>
-                    <svg class="faq-item-chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <polyline points="6 9 12 15 18 9"></polyline>
-                    </svg>
-                </button>
+                    <i class="fas fa-chevron-down faq-item-chevron"></i>
+                </label>
                 <div class="faq-item-body">
-                    <p class="faq-item-a">
-                        Todas as suas compras podem ser feitas pelo nosso próprio site. Os itens comprados são setados de forma automática, não é necessário apresentar comprovante de pagamento à equipe, apenas em caso de problemas no recebimento. Caso efetue reembolso tentando burlar o sistema, sua conta será banida permanentemente.
-                    </p>
-                </div>
-            </div>
-
-            <div class="faq-item">
-                <button class="faq-item-btn">
-                    <span class="faq-item-num">05</span>
-                    <span class="faq-item-q">Como posso me tornar streamer?</span>
-                    <svg class="faq-item-chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <polyline points="6 9 12 15 18 9"></polyline>
-                    </svg>
-                </button>
-                <div class="faq-item-body">
-                    <p class="faq-item-a">
-                        Abra um ticket pelo nosso site. Feito isso, suas plataformas de conteúdo serão analisadas pela equipe responsável. Todos os requisitos para participação e as recompensas serão informados no momento do atendimento.
-                    </p>
+                    <p class="faq-item-a">As compras são feitas pelo site. Os itens são setados automaticamente.</p>
                 </div>
             </div>
 
         </div>
-
     </div>
 
 </section>
 
-<!--========================-->
-<!-- DISCORD -->
-<!--========================-->
-
-<section class="discord">
-
-    <img src="assets/logo_3d_acrp.webp" class="discord-bg" alt="Cidade">
-
-    <div class="discord-content">
-
-        <small>COMUNIDADE</small>
-
-        <h2>
-
-            Faça parte da
-            nossa comunidade.
-
-        </h2>
-
-        <p>
-
-            Entre em nosso Discord,
-            participe da whitelist,
-            acompanhe eventos,
-            promoções e novidades.
-
-        </p>
-
-        <div class="discord-buttons">
-
-            <a href="https://discord.gg/rpaction" class="btn-primary">
-
-                Entrar no Discord
-
-            </a>
-
-            <a href="#" class="btn-secondary">
-
-                Fazer Whitelist
-
-            </a>
-
-        </div>
-
-    </div>
-
-</section>
-
-<!--========================-->
-<!-- FOOTER -->
-<!--========================-->
-
-<footer id="footer">
-
+<!-- ===== FOOTER ===== -->
+<footer>
     <div class="footer-container">
-
         <div class="footer-links-top">
-            <a href="#">Início</a>
-            <span>|</span>
-            <a href="#">Regras</a>
-            <span>|</span>
-            <a href="#">Suporte</a>
-            <span>|</span>
-            <a href="#">Privacidade</a>
-            <span>|</span>
-            <a href="#">Termos de Uso</a>
+            <a href="#"><i class="fas fa-home"></i> Início</a><span>|</span>
+            <a href="#"><i class="fas fa-gavel"></i> Regras</a><span>|</span>
+            <a href="#"><i class="fas fa-headset"></i> Suporte</a><span>|</span>
+            <a href="#"><i class="fas fa-lock"></i> Privacidade</a><span>|</span>
+            <a href="#"><i class="fas fa-file-contract"></i> Termos</a>
         </div>
-
         <div class="footer-bottom">
-
             <p>© 2026 Action City RP. Todos os direitos reservados.</p>
-            <p class="footer-disclaimer">
-                Action City é um servidor independente de Role Play no Multi Theft Auto (MTA).<br>
-                Grand Theft Auto e suas marcas pertencem à Take-Two Interactive.
-            </p>
-
+            <p class="footer-disclaimer">Action City é um servidor independente de Role Play no Multi Theft Auto (MTA).<br>Grand Theft Auto e suas marcas pertencem à Take-Two Interactive.</p>
         </div>
-
     </div>
-
 </footer>
 
-<!--========================-->
-<!-- MODAL LOGIN -->
-<!--========================-->
-
+<!-- ===== MODAL ===== -->
 <div id="login" class="modal">
-
     <div class="modal-box">
-
-        <a href="#" class="close">
-
-            &times;
-
-        </a>
-
-        <img
-        src="assets/logo_3d_acrp.webp"
-        alt="Logo">
-
-        <h2>
-
-            Entrar no Action RP
-
-        </h2>
-
+        <a href="#" class="close"><i class="fas fa-times"></i></a>
+        <img src="assets/logo_3d_acrp.webp" alt="Logo">
+        <h2>Entrar no Action RP</h2>
         <form>
-
-            <input
-            type="email"
-            placeholder="Seu e-mail">
-
-            <input
-            type="password"
-            placeholder="Sua senha">
-
-            <button>
-
-                Entrar
-
-            </button>
-
+            <input type="email" placeholder="Seu e-mail">
+            <input type="password" placeholder="Sua senha">
+            <button><i class="fas fa-sign-in-alt"></i> Entrar</button>
         </form>
-
-        <div class="modal-divider">
-
-            <span></span>
-
-            OU
-
-            <span></span>
-
-        </div>
-
-        <a href="#" class="discord-login">
-
-            Entrar com Discord
-
-        </a>
-
+        <div class="modal-divider"><span></span> OU <span></span></div>
+        <a href="#" class="discord-login"><i class="fab fa-discord"></i> Entrar com Discord</a>
     </div>
-
 </div>
 
 </body>

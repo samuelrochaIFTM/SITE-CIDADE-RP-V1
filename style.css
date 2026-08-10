@@ -1,10 +1,10 @@
 /* ========================================
-   FONTE GOOGLE
+   1. IMPORTAÇÃO DA FONTE
    ======================================== */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
 
 /* ========================================
-   RESET - ZERA AS CONFIGURAÇÕES PADRÃO
+   2. RESET
    ======================================== */
 * {
     margin: 0;
@@ -24,29 +24,24 @@ body {
 }
 
 /* ========================================
-   CORES PRINCIPAIS (VARIAVEIS)
+   3. CORES
    ======================================== */
 :root {
     --primary: #ff8a00;
     --primary-hover: #ff6b00;
-    --dark: #090909;
-    --card: #141414;
     --border: rgba(255,255,255,.08);
-    --text: #ffffff;
     --text2: #9e9e9e;
     --glass: rgba(255,255,255,.05);
 }
 
 /* ========================================
-   BACKGROUND - FUNDO DO SITE
+   4. FUNDO
    ======================================== */
 .background {
     position: fixed;
     inset: 0;
     z-index: -5;
-    background: 
-        linear-gradient(rgba(9,9,9,.82), rgba(9,9,9,.92)),
-        url("assets/bg.jpg");
+    background: linear-gradient(rgba(9,9,9,.82), rgba(9,9,9,.92)), url("assets/bg.jpg");
     background-size: cover;
     background-position: center;
 }
@@ -67,21 +62,18 @@ body {
 }
 
 /* ========================================
-   NAVBAR - MENU DE NAVEGAÇÃO
+   5. NAVBAR
    ======================================== */
 .navbar-container {
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
-    width: 100%;
     padding: 20px 7%;
     z-index: 999;
     background: rgba(18, 18, 18, 0.85);
     backdrop-filter: blur(12px);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
-    transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
-    font-family: 'Poppins', sans-serif;
+    border-bottom: 1px solid rgba(255,255,255,.05);
 }
 
 .navbar-inner {
@@ -94,7 +86,6 @@ body {
     position: relative;
 }
 
-/* Menu Desktop (Esquerda) */
 .nav-menu-desktop {
     display: flex;
     align-items: center;
@@ -112,28 +103,23 @@ body {
     color: rgba(255,255,255,0.6);
     text-decoration: none;
     transition: all 0.2s ease;
-    letter-spacing: 0.3px;
-    cursor: pointer;
-    background: transparent;
-    border: none;
 }
 
-.nav-menu-desktop .nav-link svg {
-    width: 14px;
-    height: 14px;
-    flex-shrink: 0;
+.nav-menu-desktop .nav-link i {
+    font-size: 14px;
+    width: 18px;
+    text-align: center;
 }
 
 .nav-menu-desktop .nav-link:hover {
-    color: #ffffff;
+    color: #fff;
     background: rgba(255,255,255,0.06);
 }
 
 .nav-menu-desktop .nav-link.active {
-    color: #ffffff;
+    color: #fff;
 }
 
-/* Logo Central */
 .nav-logo-center {
     position: absolute;
     left: 50%;
@@ -143,19 +129,11 @@ body {
     height: 100%;
 }
 
-.nav-logo-center a {
-    display: flex;
-    align-items: center;
-    height: 100%;
-}
-
 .nav-logo-center img {
     height: 32px;
     width: auto;
-    display: block;
 }
 
-/* Menu Desktop (Direita) */
 .nav-menu-direita {
     display: flex;
     align-items: center;
@@ -168,16 +146,7 @@ body {
     align-items: center;
     gap: 8px;
     font-size: 13px;
-    font-weight: 500;
     color: rgba(255,255,255,0.6);
-    padding: 6px 0;
-    letter-spacing: 0.3px;
-}
-
-.nav-online svg {
-    width: 14px;
-    height: 14px;
-    flex-shrink: 0;
 }
 
 .nav-online span {
@@ -188,7 +157,6 @@ body {
     width: 1px;
     height: 30px;
     background: rgba(255,255,255,0.1);
-    flex-shrink: 0;
 }
 
 .nav-login-btn {
@@ -202,15 +170,7 @@ body {
     font-size: 13px;
     font-weight: 600;
     text-decoration: none;
-    transition: all 0.35s ease;
-    border: none;
-    cursor: pointer;
-}
-
-.nav-login-btn svg {
-    width: 14px;
-    height: 14px;
-    flex-shrink: 0;
+    transition: .35s;
 }
 
 .nav-login-btn:hover {
@@ -219,41 +179,31 @@ body {
     box-shadow: 0 8px 25px rgba(255,138,0,0.3);
 }
 
-/* Mobile */
 .nav-mobile-btn {
     display: none;
-    align-items: center;
-    justify-content: center;
-    width: 36px;
-    height: 36px;
-    color: rgba(255,255,255,0.7);
-    background: transparent;
+    font-size: 20px;
+    background: none;
     border: none;
-    border-radius: 50%;
+    color: rgba(255,255,255,0.7);
     cursor: pointer;
-    transition: all 0.2s ease;
-}
-
-.nav-mobile-btn:hover {
-    color: #ffffff;
-    background: rgba(255,255,255,0.05);
-}
-
-.nav-mobile-btn svg {
-    width: 20px;
-    height: 20px;
 }
 
 .nav-mobile-login {
     display: none;
-    align-items: center;
+}
+
+.nav-mobile-login .nav-login-btn {
+    font-size: 11px;
+    padding: 5px 12px;
 }
 
 /* ========================================
-   BOTÕES
+   6. BOTÕES
    ======================================== */
 .btn-primary {
-    display: inline-block;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
     background: var(--primary);
     color: #fff;
     padding: 16px 35px;
@@ -270,7 +220,9 @@ body {
 }
 
 .btn-secondary {
-    display: inline-block;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
     border: 1px solid rgba(255,255,255,.15);
     color: #fff;
     padding: 16px 35px;
@@ -285,13 +237,11 @@ body {
 }
 
 /* ========================================
-   SEÇÃO HERO (PRINCIPAL)
+   7. HERO
    ======================================== */
 .hero {
-    width: 100%;
     min-height: 100vh;
     display: flex;
-    justify-content: space-between;
     align-items: center;
     padding: 150px 8% 80px;
     gap: 60px;
@@ -310,18 +260,6 @@ body {
 
 .hero-content {
     flex: 1;
-}
-
-.tag {
-    display: inline-block;
-    padding: 8px 18px;
-    background: rgba(255,138,0,.15);
-    border: 1px solid rgba(255,138,0,.3);
-    color: var(--primary);
-    border-radius: 40px;
-    margin-bottom: 20px;
-    font-size: 14px;
-    letter-spacing: 1px;
 }
 
 .hero-content h1 {
@@ -345,36 +283,12 @@ body {
     display: flex;
     gap: 20px;
     margin-top: 45px;
-}
-
-.hero-info {
-    display: flex;
-    gap: 25px;
-    margin-top: 60px;
-}
-
-.info-card {
-    width: 170px;
-    padding: 25px;
-    background: var(--glass);
-    border: 1px solid var(--border);
-    backdrop-filter: blur(20px);
-    border-radius: 18px;
-    text-align: center;
-}
-
-.info-card h2 {
-    color: var(--primary);
-    font-size: 30px;
-}
-
-.info-card span {
-    color: #cfcfcf;
+    flex-wrap: wrap;
 }
 
 .hero-right {
-    position: relative;
     flex: 1;
+    position: relative;
     display: flex;
     justify-content: center;
 }
@@ -395,9 +309,6 @@ body {
     opacity: .25;
 }
 
-/* ========================================
-   ANIMAÇÃO FLUTUANTE
-   ======================================== */
 @keyframes float {
     0% { transform: translateY(0); }
     50% { transform: translateY(-18px); }
@@ -405,10 +316,9 @@ body {
 }
 
 /* ========================================
-   TÍTULO DAS SEÇÕES
+   8. TÍTULOS
    ======================================== */
 .section-title {
-    width: 100%;
     text-align: center;
     margin-bottom: 70px;
 }
@@ -434,80 +344,7 @@ body {
 }
 
 /* ========================================
-   SISTEMAS - MINIMALISTA
-   ======================================== */
-.systems {
-    padding: 120px 8%;
-}
-
-.systems-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 25px;
-    margin-top: 60px;
-}
-
-.system-card {
-    background: rgba(255,255,255,.03);
-    border: 1px solid var(--border);
-    border-radius: 16px;
-    padding: 30px 25px;
-    transition: all .35s ease;
-    backdrop-filter: blur(10px);
-}
-
-.system-card:hover {
-    transform: translateY(-6px);
-    border-color: rgba(255,138,0,.3);
-    box-shadow: 0 20px 40px rgba(0,0,0,.3);
-    background: rgba(255,255,255,.05);
-}
-
-.system-card .video-link {
-    text-decoration: none;
-    color: inherit;
-    display: block;
-}
-
-.system-icon {
-    font-size: 36px;
-    margin-bottom: 15px;
-    display: block;
-}
-
-.system-card h3 {
-    font-size: 20px;
-    margin-bottom: 12px;
-    color: #fff;
-    font-weight: 600;
-}
-
-.system-card p {
-    color: var(--text2);
-    font-size: 14px;
-    line-height: 1.6;
-    margin-bottom: 16px;
-}
-
-.system-card ul {
-    list-style: none;
-    padding: 0;
-}
-
-.system-card ul li {
-    color: rgba(255,255,255,.5);
-    font-size: 13px;
-    line-height: 1.8;
-    padding: 2px 0;
-}
-
-.system-card ul li::before {
-    content: "✦ ";
-    color: var(--primary);
-}
-
-/* ========================================
-   COMO COMEÇAR - SEÇÃO DE PASSOS
+   9. COMO COMEÇAR
    ======================================== */
 .como-comecar {
     padding: 120px 8%;
@@ -541,7 +378,6 @@ body {
     padding: 45px 35px;
     text-align: center;
     transition: .4s;
-    backdrop-filter: blur(18px);
     position: relative;
     overflow: hidden;
 }
@@ -589,7 +425,9 @@ body {
 }
 
 .btn-passo {
-    display: inline-block;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
     background: var(--primary);
     color: #fff;
     padding: 14px 28px;
@@ -598,8 +436,6 @@ body {
     text-decoration: none;
     transition: .35s;
     font-size: 14px;
-    border: none;
-    cursor: pointer;
 }
 
 .btn-passo:hover {
@@ -615,11 +451,10 @@ body {
 
 .btn-passo.secundario:hover {
     background: rgba(255,255,255,.15);
-    transform: translateY(-3px);
 }
 
 /* ========================================
-   FAQ - PERGUNTAS FREQUENTES
+   10. FAQ - SEM JAVASCRIPT (CHECKBOX HACK)
    ======================================== */
 .faq {
     padding: 120px 8%;
@@ -633,16 +468,11 @@ body {
     gap: 50px;
 }
 
-.faq-header {
-    text-align: left;
-}
-
 .faq-title {
     font-size: 48px;
     font-weight: 700;
     color: #fff;
     margin-bottom: 16px;
-    line-height: 1.2;
 }
 
 .faq-highlight {
@@ -656,36 +486,31 @@ body {
     max-width: 650px;
 }
 
-.faq-desc strong {
-    color: #fff;
-}
-
 .faq-items {
     display: flex;
     flex-direction: column;
     gap: 12px;
 }
 
+/* Cada item da FAQ */
 .faq-item {
     border-bottom: 1px solid rgba(255,255,255,.06);
 }
 
+/* Esconde o checkbox */
+.faq-checkbox {
+    display: none;
+}
+
+/* O label funciona como botão clicável */
 .faq-item-btn {
     display: flex;
     align-items: center;
     gap: 16px;
-    width: 100%;
     padding: 20px 0;
-    background: transparent;
-    border: none;
     color: #fff;
     cursor: pointer;
-    text-align: left;
-    transition: all .3s ease;
-}
-
-.faq-item-btn:hover {
-    color: var(--primary);
+    user-select: none;
 }
 
 .faq-item-num {
@@ -694,7 +519,6 @@ body {
     color: var(--primary);
     min-width: 32px;
     opacity: 0.6;
-    letter-spacing: 0.5px;
 }
 
 .faq-item-q {
@@ -704,24 +528,25 @@ body {
 }
 
 .faq-item-chevron {
-    width: 20px;
-    height: 20px;
+    font-size: 16px;
     color: rgba(255,255,255,.3);
     transition: transform .3s ease;
-    flex-shrink: 0;
 }
 
-.faq-item.active .faq-item-chevron {
+/* Quando o checkbox está marcado, a seta gira */
+.faq-checkbox:checked ~ .faq-item-btn .faq-item-chevron {
     transform: rotate(180deg);
 }
 
+/* Corpo da resposta (escondido por padrão) */
 .faq-item-body {
     max-height: 0;
     overflow: hidden;
     transition: max-height .4s ease, padding .4s ease;
 }
 
-.faq-item.active .faq-item-body {
+/* Quando o checkbox está marcado, mostra a resposta */
+.faq-checkbox:checked ~ .faq-item-body {
     max-height: 300px;
     padding-bottom: 20px;
 }
@@ -734,54 +559,7 @@ body {
 }
 
 /* ========================================
-   DISCORD
-   ======================================== */
-.discord {
-    position: relative;
-    overflow: hidden;
-    margin: 120px 8%;
-    border-radius: 30px;
-    padding: 90px;
-    background: linear-gradient(135deg, #151515, #101010);
-    border: 1px solid var(--border);
-}
-
-.discord-bg {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    width: 600px;
-    opacity: .12;
-}
-
-.discord-content {
-    position: relative;
-    max-width: 650px;
-}
-
-.discord-content small {
-    color: var(--primary);
-    letter-spacing: 4px;
-}
-
-.discord-content h2 {
-    font-size: 52px;
-    margin: 20px 0;
-}
-
-.discord-content p {
-    color: var(--text2);
-    line-height: 32px;
-    margin-bottom: 40px;
-}
-
-.discord-buttons {
-    display: flex;
-    gap: 20px;
-}
-
-/* ========================================
-   FOOTER - RODAPÉ
+   11. FOOTER
    ======================================== */
 footer {
     margin-top: 120px;
@@ -813,7 +591,9 @@ footer {
     font-size: 14px;
     font-weight: 500;
     transition: .3s;
-    padding: 4px 8px;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
 }
 
 .footer-links-top a:hover {
@@ -825,10 +605,6 @@ footer {
     font-size: 14px;
 }
 
-.footer-bottom {
-    text-align: center;
-}
-
 .footer-bottom p {
     color: rgba(255,255,255,.5);
     font-size: 14px;
@@ -836,7 +612,7 @@ footer {
     margin-bottom: 5px;
 }
 
-.footer-bottom .footer-disclaimer {
+.footer-disclaimer {
     color: rgba(255,255,255,.3);
     font-size: 12px;
     line-height: 1.6;
@@ -844,7 +620,7 @@ footer {
 }
 
 /* ========================================
-   MODAL - JANELA DE LOGIN
+   12. MODAL
    ======================================== */
 .modal {
     position: fixed;
@@ -889,10 +665,10 @@ footer {
     padding: 16px;
     margin-bottom: 18px;
     border: none;
-    outline: none;
     border-radius: 12px;
     background: #1b1b1b;
     color: #fff;
+    outline: none;
 }
 
 .modal-box button {
@@ -901,10 +677,14 @@ footer {
     border: none;
     border-radius: 12px;
     background: var(--primary);
-    color: white;
-    cursor: pointer;
+    color: #fff;
     font-weight: 600;
+    cursor: pointer;
     transition: .3s;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
 }
 
 .modal-box button:hover {
@@ -916,7 +696,7 @@ footer {
     top: 18px;
     right: 22px;
     color: #fff;
-    font-size: 30px;
+    font-size: 28px;
     text-decoration: none;
 }
 
@@ -935,146 +715,108 @@ footer {
 }
 
 .discord-login {
-    display: block;
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
     padding: 15px;
     border-radius: 12px;
     background: #5865F2;
-    color: white;
+    color: #fff;
     text-decoration: none;
+    transition: .3s;
+}
+
+.discord-login:hover {
+    background: #4752c4;
+    transform: translateY(-2px);
 }
 
 /* ========================================
-   RESPONSIVO - AJUSTES PARA TELAS MENORES
+   13. RESPONSIVO - MOBILE
    ======================================== */
+@media (max-width: 768px) {
 
-/* Tablets e telas menores que 1280px */
-@media (max-width: 1279px) {
-    .nav-menu-desktop {
-        display: none;
-    }
-    
+    .nav-menu-desktop,
     .nav-menu-direita {
         display: none;
     }
-    
-    .nav-mobile-btn {
-        display: flex;
-    }
-    
+
+    .nav-mobile-btn,
     .nav-mobile-login {
         display: flex;
     }
-    
+
     .nav-logo-center {
         position: static;
         transform: none;
     }
-    
-    .navbar-inner {
-        justify-content: space-between;
-        gap: 12px;
-    }
-    
-    .nav-logo-center img {
-        height: 28px;
-    }
-}
 
-/* Para tablets */
-@media (max-width: 1100px) {
-    .hero {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .hero-buttons,
-    .discord-buttons,
-    .hero-info {
-        justify-content: center;
-        flex-wrap: wrap;
-    }
-
-    .systems-grid,
-    .passos-grid {
-        grid-template-columns: 1fr 1fr;
-    }
-
-    .faq-title {
-        font-size: 38px;
-    }
-}
-
-/* Para celulares */
-@media (max-width: 768px) {
-    .navbar-container {
-        padding: 15px 4%;
-    }
-    
-    .navbar-inner {
-        height: 38px;
-    }
-    
     .nav-logo-center img {
         height: 24px;
     }
-    
-    .nav-mobile-btn {
-        width: 32px;
-        height: 32px;
-    }
-    
-    .nav-mobile-btn svg {
-        width: 18px;
-        height: 18px;
-    }
-    
-    .nav-mobile-login .nav-login-btn {
-        padding: 5px 12px;
-        font-size: 11px;
-        border-radius: 8px;
-    }
-    
-    .nav-mobile-login .nav-login-btn svg {
-        width: 12px;
-        height: 12px;
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 120px 4% 60px;
+        gap: 30px;
+        min-height: auto;
     }
 
-    .systems-grid,
+    .characters {
+        max-width: 300px;
+        margin: 0 auto;
+    }
+
+    .hero-content h1 {
+        font-size: 32px;
+        line-height: 42px;
+    }
+
+    .hero-content p {
+        font-size: 15px;
+        line-height: 28px;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero-buttons .btn-primary,
+    .hero-buttons .btn-secondary {
+        width: 100%;
+        max-width: 280px;
+        justify-content: center;
+        padding: 14px 20px;
+        font-size: 14px;
+    }
+
+    .logo-big {
+        width: 180px;
+    }
+
+    .glow {
+        width: 180px;
+        height: 180px;
+        filter: blur(100px);
+    }
+
     .passos-grid {
         grid-template-columns: 1fr;
     }
 
-    .hero-content h1 {
-        font-size: 46px;
-        line-height: 55px;
-    }
-
     .section-title h2 {
-        font-size: 36px;
-    }
-
-    .discord-content h2 {
-        font-size: 34px;
-        line-height: 46px;
-    }
-
-    .discord {
-        padding: 60px 30px;
-    }
-
-    .modal-box {
-        width: 92%;
+        font-size: 28px;
     }
 
     .passo-card {
-        padding: 35px 25px;
+        padding: 30px 20px;
     }
 
     .passo-numero {
-        font-size: 80px;
-        top: -5px;
-        right: 5px;
+        font-size: 60px;
     }
 
     .passo-botoes {
@@ -1084,75 +826,49 @@ footer {
 
     .btn-passo {
         width: 100%;
-        max-width: 250px;
-        text-align: center;
-    }
-
-    footer {
-        padding: 40px 4% 20px;
-        margin-top: 80px;
-    }
-    
-    .footer-links-top {
-        gap: 6px;
-        margin-bottom: 25px;
-        padding-bottom: 25px;
-    }
-    
-    .footer-links-top a {
-        font-size: 12px;
-        padding: 2px 4px;
-    }
-    
-    .footer-links-top span {
-        font-size: 12px;
-    }
-    
-    .footer-bottom p {
-        font-size: 12px;
-        line-height: 1.6;
-    }
-    
-    .footer-bottom .footer-disclaimer {
-        font-size: 11px;
-        line-height: 1.5;
+        max-width: 220px;
+        justify-content: center;
     }
 
     .faq {
-        padding: 80px 4%;
+        padding: 60px 4%;
     }
 
     .faq-title {
-        font-size: 32px;
-    }
-
-    .faq-desc {
-        font-size: 15px;
+        font-size: 28px;
     }
 
     .faq-item-q {
-        font-size: 15px;
-    }
-
-    .faq-item-a {
         font-size: 14px;
     }
 
-    .faq-item-num {
-        font-size: 12px;
-        min-width: 28px;
+    .faq-item-a {
+        font-size: 13px;
     }
-}
 
-/* Para telas muito pequenas */
-@media (max-width: 400px) {
-    .nav-mobile-login .nav-login-btn {
-        padding: 4px 10px;
-        font-size: 10px;
+    footer {
+        margin-top: 60px;
+        padding: 30px 4% 20px;
     }
-    
-    .nav-mobile-login .nav-login-btn svg {
-        width: 10px;
-        height: 10px;
+
+    .footer-links-top a {
+        font-size: 12px;
+    }
+
+    .footer-links-top span {
+        font-size: 12px;
+    }
+
+    .modal-box {
+        width: 92%;
+        padding: 30px 20px;
+    }
+
+    .modal-box img {
+        width: 80px;
+    }
+
+    .modal-box h2 {
+        font-size: 20px;
     }
 }
