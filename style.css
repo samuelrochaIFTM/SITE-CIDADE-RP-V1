@@ -35,30 +35,33 @@ body {
 }
 
 /* ========================================
-   4. FUNDO
+   4. FUNDO COM VÍDEO (P&B + BAIXA OPACIDADE)
    ======================================== */
 .background {
     position: fixed;
     inset: 0;
     z-index: -5;
-    background: linear-gradient(rgba(9,9,9,.82), rgba(9,9,9,.92)), url("assets/bg.jpg");
-    background-size: cover;
-    background-position: center;
+    overflow: hidden;
+}
+
+/* Vídeo de fundo - cobre a tela inteira */
+.bg-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    transform: translateX(-50%) translateY(-50%);
+    filter: grayscale(100%) brightness(0.6) contrast(1.2);
+    opacity: 0.2;
 }
 
 .overlay {
     position: absolute;
     inset: 0;
-    background: radial-gradient(circle at center, rgba(255,138,0,.12), transparent 60%);
-}
-
-.grid {
-    position: absolute;
-    inset: 0;
-    background-image:
-        linear-gradient(rgba(255,255,255,.03) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(255,255,255,.03) 1px, transparent 1px);
-    background-size: 50px 50px;
+    background: 
+        radial-gradient(circle at center, rgba(9,9,9,0.2) 0%, rgba(9,9,9,0.85) 100%);
+    z-index: 1;
 }
 
 /* ========================================
@@ -72,7 +75,6 @@ body {
     padding: 20px 7%;
     z-index: 999;
     background: rgba(18, 18, 18, 0.85);
-    backdrop-filter: blur(12px);
     border-bottom: 1px solid rgba(255,255,255,.05);
 }
 
@@ -163,8 +165,8 @@ body {
     display: flex;
     align-items: center;
     gap: 8px;
-    padding: 8px 20px;
-    border-radius: 10px;
+    padding: 8px 25px;
+    border-radius: 13px;
     background: var(--primary);
     color: #fff;
     font-size: 13px;
@@ -200,7 +202,7 @@ body {
 /* ========================================
    6. BOTÕES
    ======================================== */
-.btn-primary {
+.btn-wl {
     display: inline-flex;
     align-items: center;
     gap: 10px;
@@ -214,12 +216,12 @@ body {
     transition: .35s;
 }
 
-.btn-primary:hover {
+.btn-wl:hover {
     transform: translateY(-5px);
     background: var(--primary-hover);
 }
 
-.btn-secondary {
+.btn-discord {
     display: inline-flex;
     align-items: center;
     gap: 10px;
@@ -232,7 +234,7 @@ body {
     transition: .35s;
 }
 
-.btn-secondary:hover {
+.btn-discord:hover {
     background: rgba(255,255,255,.10);
 }
 
@@ -299,16 +301,6 @@ body {
     z-index: 2;
 }
 
-.glow {
-    width: 320px;
-    height: 320px;
-    position: absolute;
-    border-radius: 50%;
-    background: var(--primary);
-    filter: blur(150px);
-    opacity: .25;
-}
-
 @keyframes float {
     0% { transform: translateY(0); }
     50% { transform: translateY(-18px); }
@@ -316,7 +308,7 @@ body {
 }
 
 /* ========================================
-   8. TÍTULOS
+   8. GUIA RÁPIDO
    ======================================== */
 .section-title {
     text-align: center;
@@ -332,7 +324,7 @@ body {
 
 .section-title h2 {
     font-size: 48px;
-    margin: 18px 0;
+    margin: 18px 0px;
 }
 
 .section-title p {
@@ -454,7 +446,7 @@ body {
 }
 
 /* ========================================
-   10. FAQ - SEM JAVASCRIPT (CHECKBOX HACK)
+   10. FAQ
    ======================================== */
 .faq {
     padding: 120px 8%;
@@ -492,17 +484,14 @@ body {
     gap: 12px;
 }
 
-/* Cada item da FAQ */
 .faq-item {
     border-bottom: 1px solid rgba(255,255,255,.06);
 }
 
-/* Esconde o checkbox */
 .faq-checkbox {
     display: none;
 }
 
-/* O label funciona como botão clicável */
 .faq-item-btn {
     display: flex;
     align-items: center;
@@ -533,19 +522,16 @@ body {
     transition: transform .3s ease;
 }
 
-/* Quando o checkbox está marcado, a seta gira */
 .faq-checkbox:checked ~ .faq-item-btn .faq-item-chevron {
     transform: rotate(180deg);
 }
 
-/* Corpo da resposta (escondido por padrão) */
 .faq-item-body {
     max-height: 0;
     overflow: hidden;
     transition: max-height .4s ease, padding .4s ease;
 }
 
-/* Quando o checkbox está marcado, mostra a resposta */
 .faq-checkbox:checked ~ .faq-item-body {
     max-height: 300px;
     padding-bottom: 20px;
@@ -608,14 +594,12 @@ footer {
 .footer-bottom p {
     color: rgba(255,255,255,.5);
     font-size: 14px;
-    line-height: 1.8;
     margin-bottom: 5px;
 }
 
 .footer-disclaimer {
     color: rgba(255,255,255,.3);
     font-size: 12px;
-    line-height: 1.6;
     margin-top: 10px;
 }
 
@@ -698,6 +682,12 @@ footer {
     color: #fff;
     font-size: 28px;
     text-decoration: none;
+}
+
+.fa-times:hover {
+    color: red;
+    padding: 3px;
+    transition: .5s;
 }
 
 .modal-divider {
@@ -784,8 +774,8 @@ footer {
         align-items: center;
     }
 
-    .hero-buttons .btn-primary,
-    .hero-buttons .btn-secondary {
+    .hero-buttons .btn-wl,
+    .hero-buttons .btn-discord {
         width: 100%;
         max-width: 280px;
         justify-content: center;
@@ -795,12 +785,6 @@ footer {
 
     .logo-big {
         width: 180px;
-    }
-
-    .glow {
-        width: 180px;
-        height: 180px;
-        filter: blur(100px);
     }
 
     .passos-grid {
